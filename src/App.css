@@ -88,6 +88,11 @@ h1 {
   font-weight: 500 !important;
 }
 
+.stack-logo-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 
 /*========= mediaqueries ========== */
 
