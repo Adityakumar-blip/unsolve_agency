@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Footer from './components/Footer/Footer'
 import Header from './components/Header'
 import Expertise from './components/Home/Expertise'
 import Quote from './components/Home/Quote'
@@ -14,6 +15,7 @@ function App() {
     <Quote/>
     <WhatWeDo/>
     <Expertise/>
+    <Footer/>
     </>
   )
 }

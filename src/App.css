@@ -68,14 +68,20 @@ h1 {
   background-color: #47127b !important;
   width: 13rem;
   height: 3rem;
-  font-size: 0.9rem !important;
+  font-size: 1rem !important;
 }
 
 /* wedo section */
 
+.wedo {
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+}
+
 .wedo-main {
   padding: 2rem ;
-  background-color: black;
+  background-color: white;
+  color: black;
 }
 
 .wedo-list {
@@ -85,7 +91,7 @@ h1 {
 
 .wedo-list-heading {
   margin-bottom: 2rem !important;
-  font-weight: 500 !important;
+  /* font-weight: 500 !important; */
 }
 
 .stack-logo-container {
@@ -93,10 +99,60 @@ h1 {
   justify-content: space-evenly;
 }
 
+.sub-stack {
+  /* background-color: black; */
+  color: #47127b;
+  font-size: 1.6rem;
+  padding-left: 2rem;
+}
+
+
+
+.main-stack{
+  /* background-color: black; */
+}
+
+.footer-container {
+  background-color: black;
+  /* height: 50vh; */
+  padding: 0rem 2rem 2rem 0;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 4rem 0 0 2rem;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 30%;
+  font-size: 2rem;
+}
+
+.newsletter input {
+  height: 3rem;
+  border: none;
+  text-decoration: none ;
+}
+
 
 /*========= mediaqueries ========== */
 
 @media only screen and (max-width: 480px) {
+
+  .wedo {
+      font-size: 1.7rem !important;
+  }
+
+  .sub-stack {
+    font-size: 1.5rem !important;
+  }
+
   .bg-video-wrap {
     width: 100vw;
     height: 50%;
@@ -123,9 +179,15 @@ h1 {
 
   .wedo-list-heading {
     font-size: 2rem !important;
+    font-weight: 600 !important;
   }
 
   .title-heading {
     font-size: 2.5rem !important;
+  }
+
+  .newsletter {
+    width: 100%;
+    font-size: 1.5rem;
   }
 }
