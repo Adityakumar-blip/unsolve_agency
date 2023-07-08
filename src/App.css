@@ -574,6 +574,36 @@ form {
 
 input[type="email"] {
   padding: 0.5rem;
-  border: 1px solid #ccc
-
+  border: 1px solid #ccc;
 }
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .footer-logo,
+  .footer-email {
+    margin-right: 0;
+    align-items: center;
+  }
+
+  .footer-email {
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .footer__email {
+    font-size: 1.7rem;
+    margin-top: 1rem;
+  }
+
+  .paragraph-n {
+    font-size: 0.8rem;
+  }
+}
+
