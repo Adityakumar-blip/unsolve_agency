@@ -4,23 +4,25 @@ const Expertise = () => {
   return (
     <div className="main-stack">
       <div className="sub-stack">
-        <h3>Technologies</h3>
+        <h3 className="clients-heading">We love our clients</h3>
+        <p className="clients-para" >We believe direct collaboration with our clients is essential to bringing unique and engaging experiences to life. We help our clients solve business problems, increase visibility and achieve unexpected results.</p>
         <marquee behaviour="scroll" direction="left">
           <div className="stack-logo-container">
             <img
-              src="https://cdn.iconscout.com/icon/free/png-512/logo-1889531-1597591.png?f=avif&w=256"
+              src="https://socialpubli.netlify.app/static/media/png-logo.d103ec03b933f0b9b51e.png"
               alt="reactjs"
-              width="100px"
+              width="200px"
               height="100px"
+              style={{ backgroundColor: "black" }}
             />
             <img
-              src="https://cdn.iconscout.com/icon/free/png-512/node-js-1-1174935.png?f=avif&w=256"
+              src="https://paisagroww.in/assets/newlogo-6c6dc49b.png"
               alt="nodejs"
-              width="100px"
+              width="200px"
               height="100px"
             />
             <img
-              src="https://cdn.iconscout.com/icon/free/png-512/html-59-225995.png?f=avif&w=256"
+              src="https://pps.whatsapp.net/v/t61.24694-24/173184462_980758392661678_2810191436791325645_n.jpg?ccb=11-4&oh=01_AdRwQ2snzxhZNhxsSRp4caFO12mgDZlHC4Jn0v89BZm85w&oe=64AFEEDC"
               alt="nodejs"
               width="100px"
               height="100px"

@@ -11,6 +11,7 @@ import { Button, IconButton } from "@mui/material";
 import HeroPage from "./Home/HeroPage";
 import { GiCrossMark, GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from 'react-icons/rx'
+import logo from '../assets/unsolve.png'
 
 const navItems = ["Home", "About", "Contact", "Works", 'Sales'];
 
@@ -85,9 +86,12 @@ export default function ElevateAppBar(props) {
                 >
                   <GiHamburgerMenu />
                 </IconButton>
-                <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
+                {/* <Typography variant="h5" component="div" sx={{ flexGrow: 1 }}>
                   Unsolved Agency
-                </Typography>
+                </Typography> */}
+                <Box sx={{flexGrow : 1}} >
+                  <img src={logo} alt="unsolved_logo" width={150} height={60} />
+                </Box>
                 <Box sx={{ display: { xs: "none", sm: "block" } }}>
                   {navItems.map((item) => (
                     <Button key={item} sx={{ color: "#fff" }}>

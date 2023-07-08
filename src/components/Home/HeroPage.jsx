@@ -1,19 +1,21 @@
-import React from 'react'
-import videobg from '../../assets/videoplayback.mp4'
+import React from 'react';
+import videobg from '../../assets/videoplayback.mp4';
+import background from '../../assets/background.png';
 
 const HeroPage = () => {
   return (
-    <div className="bg-video-wrap">
-    <video src={videobg} autoPlay loop muted>
-    </video>
-    <div className="overlay">
-    </div>
-    <h1 className='title-heading'>
-        Brand Issues?
-        Contact Us 
-    </h1>
-  </div>
-  )
-}
+    <>
+      <div className="main_container">
+        <div className="image_container">
+          <img src={background} alt="background" />
+        </div>
+        <div className="content_container">
+          <h2>Empowering businesses with innovative software solutions.</h2>
+          <button className='connect_btn' >Get Free Demo</button>
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default HeroPage
+export default HeroPage;

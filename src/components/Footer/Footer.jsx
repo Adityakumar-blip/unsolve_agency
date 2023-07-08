@@ -1,21 +1,18 @@
-import React from 'react'
-import logoImg from '../../assets/UNSOLVED.png'
+import React from 'react';
+import logo from '../../assets/unsolve.png';
 
 const Footer = () => {
   return (
-    <div className="footer-container">
-        <div className="left-container">
-            <img src={logoImg} alt='unsolved_logo' width="200px" height="60px" />
-            <div className="newsletter">
-                <h4 style={{color:"white"}} >Join newsletter, for latest update</h4>
-                <input type='text' placeholder="Enter Your Email" />
-            </div>
-        </div>
-        <div className="right-container">
-
-        </div>
+    <div className="footer">
+      <div className="footer-logo">
+        <img src={logo} alt="Logo" className="logo" />
+      </div>
+      <div className="footer-email">
+      <div class="paragraph-n">Wir arbeiten mit ambitionierten Marken und Menschen zusammen. Sag hi ✋</div>
+      <div class="footer__email">Unsolved.agency@gmail.com</div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
