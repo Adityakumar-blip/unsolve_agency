@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;700&display=swap');
+
+
+.about-main {
+    background-color: black;
+    padding-bottom: 3rem;
+}
+
+.believe {
+    width: 60%;
+}
+
+.believe-heading {
+    font-size: 10rem;
+    padding: 10rem 0 0 2.5rem;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 600;
+    color: #47127b;
+}
+
+.believe-para {
+    padding: 3rem 2.5rem 0 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.design {
+    font-size: 4rem ;
+    font-weight: 600;
+    font-family: 'Lato' , sans-serif;
+    color: white;
+}
+.development {
+    font-size: 4rem ;
+    font-weight: 600;
+    font-family: 'Lato' , sans-serif;
+    color: white;
+}
+.dignity {
+    font-size: 4rem ;
+    font-weight: 600;
+    font-family: 'Lato' , sans-serif;
+    color: white;
+}
+
+.design-para {
+    width: 80%;
+    color: white;
+    font-family: 'Poppins' , sans-serif;
+}
+
+.development-para {
+    width: 80%;
+    color: white;
+    font-family: 'Poppins' , sans-serif;
+}
+
+.dignity-para {
+    width: 80%;
+    color: white;
+    font-family: 'Poppins' , sans-serif;
+}

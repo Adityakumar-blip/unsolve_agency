@@ -1,6 +1,7 @@
 import React from 'react';
 import videobg from '../../assets/videoplayback.mp4';
 import background from '../../assets/background.png';
+import { Link } from 'react-router-dom';
 
 const HeroPage = () => {
   return (
@@ -11,7 +12,7 @@ const HeroPage = () => {
         </div>
         <div className="content_container">
           <h2>Empowering businesses with innovative software solutions.</h2>
-          <button className='connect_btn' >Get Free Demo</button>
+          <Link to='/contact' ><button className='connect_btn' >Get Free Demo</button></Link>
         </div>
       </div>
     </>
