@@ -10,19 +10,24 @@ import Clients from './components/Home/Clients'
 import OurWorks from './components/Home/OurWorks'
 // import RandomSymbols from './utils/RandomSymbols'
 
+// ** routes
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Mainpage from './components/Home/Mainpage'
+import AboutUs from './components/About/AboutUs'
+import Contact from './components/Contact/Contact'
+
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <Header />
-      <Quote />
-      <WhatWeDo />
-      <OurWorks />
-      <Expertise />
-      {/* <Cube/> */}
-      {/* <RandomSymbols/> */}
-      {/* <Clients/> */}
+      <Router>
+        <Routes>
+          <Route path='/' Component={Mainpage} />
+          <Route path='/about' Component={AboutUs} />
+          <Route path='/contact' Component={Contact} />
+        </Routes>
+      </Router>
       <Footer />
     </>
   )

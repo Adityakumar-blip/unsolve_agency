@@ -1,0 +1,90 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;700&display=swap');
+
+/* Common styles */
+.about-main {
+    background-color: black;
+    padding-bottom: 3rem;
+}
+
+.believe {
+    width: 60%;
+}
+
+.believe-heading {
+    font-size: 10rem;
+    padding: 10rem 0 0 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #47127b;
+}
+
+.believe-para {
+    padding: 3rem 2.5rem 0 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+    .believe {
+        width: 100%;
+    }
+
+    .believe-heading {
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .believe {
+        width: 100%;
+    }
+
+    .believe-heading {
+        font-size: 6rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .believe {
+        width: 100%;
+    }
+
+    .believe-heading {
+        font-size: 4rem;
+    }
+}
+
+.design,
+.development,
+.dignity {
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+}
+
+.design-para,
+.development-para,
+.dignity-para {
+    width: 100%;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .design,
+    .development,
+    .dignity {
+        font-size: 3rem;
+    }
+
+    .design-para,
+    .development-para,
+    .dignity-para {
+        font-size: 1.6rem;
+    }
+}

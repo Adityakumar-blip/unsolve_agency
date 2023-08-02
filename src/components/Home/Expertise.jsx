@@ -10,24 +10,24 @@ const Expertise = () => {
           <div className="stack-logo-container">
             <img
               src="https://socialpubli.netlify.app/static/media/png-logo.d103ec03b933f0b9b51e.png"
-              alt="reactjs"
+              alt="socialpubli"
               width="200px"
               height="100px"
               style={{ backgroundColor: "black" }}
             />
             <img
               src="https://paisagroww.in/assets/newlogo-6c6dc49b.png"
-              alt="nodejs"
+              alt="paisagroww"
               width="200px"
               height="100px"
             />
             <img
               src="https://pps.whatsapp.net/v/t61.24694-24/173184462_980758392661678_2810191436791325645_n.jpg?ccb=11-4&oh=01_AdRwQ2snzxhZNhxsSRp4caFO12mgDZlHC4Jn0v89BZm85w&oe=64AFEEDC"
-              alt="nodejs"
+              alt="kooky"
               width="100px"
               height="100px"
             />
-            <img
+            {/* <img
               src="https://cdn.iconscout.com/icon/free/png-512/javascript-2038874-1720087.png?f=avif&w=256"
               alt="nodejs"
               width="100px"
@@ -56,7 +56,7 @@ const Expertise = () => {
               alt="nodejs"
               width="100px"
               height="100px"
-            />
+            /> */}
           </div>
         </marquee>
       </div>
