@@ -6,7 +6,7 @@ const Expertise = () => {
       <div className="sub-stack">
         <h3 className="clients-heading">We love our clients</h3>
         <p className="clients-para" >We believe direct collaboration with our clients is essential to bringing unique and engaging experiences to life. We help our clients solve business problems, increase visibility and achieve unexpected results.</p>
-        <marquee behaviour="scroll" direction="left">
+        <marquee behaviour="scroll" directi on="left">
           <div className="stack-logo-container">
             <img
               src="https://socialpubli.netlify.app/static/media/png-logo.d103ec03b933f0b9b51e.png"
