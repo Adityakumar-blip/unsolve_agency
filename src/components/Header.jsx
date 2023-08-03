@@ -1,6 +1,5 @@
 import React from 'react'
 import headerLogo from '../assets/unsolve.png'
-import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
