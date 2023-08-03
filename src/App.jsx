@@ -11,7 +11,7 @@ import OurWorks from './components/Home/OurWorks'
 // import RandomSymbols from './utils/RandomSymbols'
 
 // ** routes
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Mainpage from './components/Home/Mainpage'
 import AboutUs from './components/About/AboutUs'
 import Contact from './components/Contact/Contact'
