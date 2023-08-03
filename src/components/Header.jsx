@@ -1,6 +1,6 @@
 import React from 'react'
 import headerLogo from '../assets/unsolve.png'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -13,11 +13,11 @@ const Header = () => {
       <label for="menu-icon"></label>
       <nav class="nav">
         <ul class="pt-5">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/works">Works</Link></li>
-          <li><Link to="/serviceas">Services</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/works">Works</a></li>
+          <li  ><a href="/serviceas">Services</a></li>
+          <li ><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </nav>
     </div>
