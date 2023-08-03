@@ -23,7 +23,7 @@ function App() {
       <Header />
       <Router>
         <Routes>
-          <Route path='/' Component={Mainpage} />
+          <Route exact path='/' Component={Mainpage} />
           <Route path='/about' Component={AboutUs} />
           <Route path='/contact' Component={Contact} />
         </Routes>
