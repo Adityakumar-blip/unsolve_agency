@@ -20,15 +20,15 @@ function App() {
 
   return (
     <>
-      <Header />
       <Router>
+      <Header />
         <Routes>
           <Route exact path='/' Component={Mainpage} />
           <Route path='/about' Component={AboutUs} />
           <Route path='/contact' Component={Contact} />
         </Routes>
-      </Router>
       <Footer />
+      </Router>
     </>
   )
 }
