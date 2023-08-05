@@ -1,13 +1,15 @@
 import React from 'react'
 import headerLogo from '../assets/unsolve.png'
-import { Link, useNavigate } from 'react-router-dom'
+import blcl_logo from '../assets/unsolved.png'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 const Header = () => {
+  const location = useLocation()
   return (
     <div>
-      <a href="/" className="logo">
-        <img src={headerLogo} alt="" height={50} width={50} />
-      </a>
+      <Link to="/" className="logo">
+        <img src={location.pathname == '/contact' ? blcl_logo : headerLogo} alt="" height={50} width={50} />
+      </Link>
 
       <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
       <label for="menu-icon"></label>
