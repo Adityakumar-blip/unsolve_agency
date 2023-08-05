@@ -879,3 +879,11 @@ input[type="email"] {
     font-size: 8vh;
   }
 }
+
+/* modal css */
+
+.confirmation-heaading {
+  font-weight: 600 !important;
+  font-family: "Poppins" , sans-serif !important;
+  color: #47127b;
+}

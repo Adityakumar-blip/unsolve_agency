@@ -3,6 +3,7 @@ import './Contact.css'
 import { ErrorMessage, useFormik } from 'formik'
 import db from '../../firebase'
 import * as yup from 'yup'
+import Confirmation from '../../Common/Confirmation'
 
 const initialValues = {
 	name: "",
@@ -21,12 +22,18 @@ const formSchema = yup.object({
 
 const Contact = () => {
 
+	const [open, setOpen] = React.useState(false);
+	const handleOpen = () => setOpen(true);
+	const handleClose = () => setOpen(false);
+
 	const formik = useFormik({
 		initialValues: initialValues,
 		validationSchema: formSchema,
 		onSubmit: async values => {
 			try {
+				debugger
 				await db.collection('contacts').add(values);
+				handleOpen()
 				console.log('Form data saved successfully!');
 			} catch (error) {
 				console.error('Error saving form data:', error);
@@ -97,6 +104,9 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
+			{
+				open && <Confirmation open={open} handleClose={handleClose}/>
+			}
 		</div>
 	)
 }
