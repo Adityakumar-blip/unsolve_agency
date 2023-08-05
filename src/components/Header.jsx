@@ -13,11 +13,11 @@ const Header = () => {
       <label for="menu-icon"></label>
       <nav class="nav">
         <ul class="pt-5">
-          <li><a href="/">Home</a></li>
-          <li><a href="/works">Works</a></li>
-          <li  ><a href="/serviceas">Services</a></li>
-          <li ><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><Link className='links' to="/">Home</Link></li>
+          <li><Link className='links' to="/works">Works</Link></li>
+          <li  ><Link className='links' to="/serviceas">Services</Link></li>
+          <li ><Link className='links' to="/about">About</Link></li>
+          <li><Link className='links' to="/contact">Contact</Link></li>
         </ul>
       </nav>
     </div>

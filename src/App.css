@@ -784,7 +784,7 @@ input[type="email"] {
 .nav ul li:nth-child(4){
   transition-delay: 50ms;
 }
-.nav ul li a{
+.nav ul li .links{
   font-family: 'Montserrat', sans-serif;
   font-size: 9vh;
   text-transform: uppercase;
@@ -795,11 +795,11 @@ input[type="email"] {
   color: #ececee;
   transition: all 250ms linear;
 }
-.nav ul li a:hover{
+.nav ul li .links:hover{
   text-decoration: none;
   color: #000;
 }
-.nav ul li a:after{
+.nav ul li .links:after{
   display: block;
   position: absolute;
   top: 50%;
@@ -812,7 +812,7 @@ input[type="email"] {
   opacity: 0.8;
   transition: width 250ms linear;
 }
-.nav ul li a:hover:after{
+.nav ul li .links:hover:after{
   width: 100%;
 }
 
@@ -875,7 +875,7 @@ input[type="email"] {
     text-fill-color: #000;
     color: #000;
   }
-  .nav ul li a{
+  .nav ul li .links{
     font-size: 8vh;
   }
 }

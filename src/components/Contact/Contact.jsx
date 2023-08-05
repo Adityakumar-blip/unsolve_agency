@@ -1,7 +1,8 @@
 import React from 'react'
 import './Contact.css'
-import { useFormik } from 'formik'
+import { ErrorMessage, useFormik } from 'formik'
 import db from '../../firebase'
+import * as yup from 'yup'
 
 const initialValues = {
 	name: "",
@@ -11,10 +12,18 @@ const initialValues = {
 	message: ""
 }
 
+const formSchema = yup.object({
+	name: yup.string().required('Name is required'),
+	email: yup.string().email().required('Email is required'),
+	phoneNo: yup.number().required('Mobile number is required'),
+	subject: yup.string().required('Requirement is required'),
+})
+
 const Contact = () => {
 
 	const formik = useFormik({
 		initialValues: initialValues,
+		validationSchema: formSchema,
 		onSubmit: async values => {
 			try {
 				await db.collection('contacts').add(values);
@@ -36,7 +45,7 @@ const Contact = () => {
 									<span class="dot"></span>
 									<span class="big-title">CONTACT</span>
 								</h2>
-								<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur commodo risus, nec pellentesque turpis efficitur non.</p>
+								<p class="description">Connect with us today for further enquiries.</p>
 
 							</div>
 						</div>
@@ -48,31 +57,35 @@ const Contact = () => {
 									<div class="single-input">
 										<i class="fas fa-user"></i>
 										<input type="text" name="name" onChange={formik.handleChange} placeholder="ENTER YOUR NAME" />
+										{formik.errors.name && formik.touched.name ? <p className='error'>{formik.errors.name}</p> : ""}
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="single-input">
 										<i class="fas fa-envelope"></i>
 										<input type="text" name="email" onChange={formik.handleChange} placeholder="ENTER YOUR EMAIL" />
+										{formik.errors.email && formik.touched.email ? <p className='error'>{formik.errors.email}</p> : ""}
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="single-input">
 										<i class="fas fa-phone"></i>
 										<input type="text" name="phoneNo" onChange={formik.handleChange} placeholder="ENTER YOUR PHONE NUMBER" />
+										{formik.errors.phoneNo && formik.touched.phoneNo ? <p className='error'>{formik.errors.phoneNo}</p> : ""}
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="single-input">
 										<i class="fas fa-check"></i>
-										<input type="text" name="subject" onChange={formik.handleChange} placeholder="ENTER YOUR SUBJECT" />
-									</div>
+										<input type="text" name="subject" onChange={formik.handleChange} placeholder="ENTER YOUR REQUIREMENT" />
+										{formik.errors.subject && formik.touched.subject ? <p className='error'>{formik.errors.subject}</p> : ""}
+									</div>	
 								</div>
 								<div class="col-12">
 									<div class="single-input">
 										<i class="fas fa-comment-dots"></i>
 										<textarea placeholder="ENTER YOUR MESSAGE" onChange={formik.handleChange} name='message'></textarea>
-									</div>
+									</div>	
 								</div>
 								<div class="col-12">
 									<div class="submit-input text-center">
